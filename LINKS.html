@@ -85,28 +85,8 @@
                 color: red;
             }
 
-            /* a::after {
-                content: ' | ';
-                color: red;
-                font-weight: bolder;
-                font-size: 22px;
-            } */
-            a:nth-child(even) {
-
-                min-width: 60px;
-                border-right-color: red;
-                border-right-style: solid;
-                padding-right: 3px;
-            }
-
-            a:nth-child(1) {
-
-                min-width: 60px;
-                border-right-color: red;
-                border-right-style: solid;
-                padding-right: 3px;
-            }
-
+            a:nth-child(even), 
+            a:nth-child(1), 
             a:nth-child(3) {
 
                 min-width: 60px;
@@ -114,6 +94,7 @@
                 border-right-style: solid;
                 padding-right: 3px;
             }
+
         }
 
         /* Разделитель за счет границы и отступа. Плюс - простота. Минус- код не универсален, требуется точечная подгонка.
@@ -121,29 +102,15 @@
         .fifthlinks {
             min-width: 600px;
 
-            td:nth-child(even) {
-
-                min-width: 60px;
-                border-right-color: red;
-                border-right-style: solid;
-                padding-right: 3px;
-            }
-
-            td:nth-child(1) {
-
-                min-width: 60px;
-                border-right-color: red;
-                border-right-style: solid;
-                padding-right: 3px;
-            }
-
+            td:nth-child(even), 
+            td:nth-child(1), 
             td:nth-child(3) {
 
                 min-width: 60px;
                 border-right-color: red;
                 border-right-style: solid;
                 padding-right: 3px;
-            }
+            }           
 
             a:hover {
                 color: red;
