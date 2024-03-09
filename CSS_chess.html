@@ -28,10 +28,13 @@
         background-color: white;
       }
 
-      td:first-child, 
+      td:first-child {
+        visibility: hidden;
+      }
+
       td:last-child {
         visibility: hidden;
-      }     
+      }
 
       width: 50px;
       height: 50px;
@@ -46,7 +49,10 @@
         background-color: white;
       }
 
-      td:first-child,
+      td:first-child {
+        visibility: hidden;
+      }
+
       td:last-child {
         visibility: hidden;
       }
@@ -55,14 +61,21 @@
       height: 50px;
     }
 
-    tr:first-child, 
+    tr:first-child {
+      visibility: hidden;
+      height: 15px;
+    }
+
     tr:last-child {
       visibility: hidden;
       height: 15px;
-    }    
+    }
 
     tr {
-      td:first-child, 
+      td:first-child {
+        width: 15px;
+      }
+
       td:last-child {
         width: 15px;
       }
