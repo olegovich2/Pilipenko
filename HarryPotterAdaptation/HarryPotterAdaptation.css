@@ -117,20 +117,9 @@ h2 {
     text-align: center;
 }
 
-@media screen and (min-width: 65em) {
-    .main {
-        width: 85%;
-        float: right;
-    }
-
-    .menu {
-        width: 150px
-    }
-}
-
 @media screen and (max-width: 65em) {
     .caption-text {
-        font-size: 18px;
+        font-size: 12px;
     }
     .main {
         width: 100%;
@@ -142,7 +131,7 @@ h2 {
 
     .menu {
         width: 50%;
-        display: inline-block;
+        display: inline-block;        
     }
     
     ol li {
@@ -154,15 +143,11 @@ h2 {
     .menu1 {
         width: 45%;
         float: right;
-        margin-left: 5%;
-
-        p {
-            margin: 0;
-        }
     }
 
     h2:first-child {
         text-align: center;
+        font-size: 14px;
     }
 
     div~h2 {
@@ -188,7 +173,7 @@ h2 {
 }
 @media screen and (max-width: 24em) {
     .caption-text {
-        font-size: 18px;
+        font-size: 10px;
     }
     .main {
         width: 100%;
@@ -198,13 +183,13 @@ h2 {
     }
     .menu,
     .menu1 {
-        width: 100%;
-        /* display: inline-block; */
+        width: 100%;        
     }
     h2:first-child,
     div~h2 {
         text-align: center;
         margin-top: 5 px;
+        font-size: 12px;
     }
     .menu-image {
         width: 100%;
