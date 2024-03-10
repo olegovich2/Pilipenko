@@ -131,7 +131,8 @@ h2 {
 
     .menu {
         width: 50%;
-        display: inline-block;        
+        display: inline-block;
+        float: left;        
     }
     
     ol li {
