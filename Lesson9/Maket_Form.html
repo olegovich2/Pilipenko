@@ -10,19 +10,15 @@
 
 <body>
     <form class="form" method="post" action="https://fe.it-academy.by/TestForm.php">
-
         <div class="label">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</div>
         <div class="label0">
-            <div class="labelN">
-                <label>
-                    Название статьи:
-                </label>
-            </div>
-            <div class="text">
-                <input class="textin" type="text" name="nam" placeholder="Введите название статьи" required>
+            <label for="textin" class="labelN">
+                Название статьи:
+            </label>
+            <div class="textin">
+                <input id="textin" type="text" name="nam" placeholder="Введите название статьи" required>
             </div>
         </div>
-
         <label class="labelR">
             Рубрика:
         </label>
@@ -54,7 +50,6 @@
             </label>
         </div>
         <br>
-
         <label class="label">
             Разрешить комментарии:
         </label>
@@ -64,10 +59,10 @@
             Текст статьи:
         </label>
         <br>
-        <textarea class="text1" type="text" name="textarticle" placeholder="Введите текст статьи" required></textarea>
+        <textarea class="textarea" type="text" name="textarticle" placeholder="Введите текст статьи"
+            required></textarea>
         <br>
         <input class="label" type="submit" value="Опубликовать">
-
     </form>
 </body>
 
