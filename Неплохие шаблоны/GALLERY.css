@@ -4,14 +4,41 @@
     flex-direction: column;
 }
 
-.content {
+.full-screen {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.full-screen_body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.full-screen_caption {
     font-size: 50px;
     line-height: 150%;
     font-variant: small-caps;
     font-weight: bolder;
     text-align: center;
     color: rgb(238, 226, 174);
-    background-color: rgba(100, 63, 63);
+}
+
+.full-screen_video {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -2;
 }
 
 .points {
@@ -27,6 +54,7 @@
 
 .points_body {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
 .card {
